@@ -1,0 +1,25 @@
+<h1>Lista Ciekawych Cytatów</h1>
+
+<table>
+  <tr>
+    <th>Cytat</th>
+    <th>Źródło</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @fortunes.each do |fortune| %>
+  <tr>
+    <td><%= fortune.quotation %></td>
+    <td><%= fortune.source %></td>
+    <td><%= link_to 'Pokaż', fortune %></td>
+    <td><%= link_to 'Edytuj', edit_fortune_path(fortune) %></td>
+    <td><%= link_to 'Usuń', fortune, confirm: 'Czy jesteś pewien że chcesz usunąć?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+<br />
+<%= link_to image_tag("dodaj.png", :border=>0), 'Dodaj Cytat', new_fortune_path %>
+
+

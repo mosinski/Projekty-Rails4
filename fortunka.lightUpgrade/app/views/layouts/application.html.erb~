@@ -1,0 +1,15 @@
+	<!DOCTYPE html>
+<html>
+<head>
+  <link rel="Shortcut icon" href="http://1.gravatar.com/avatar/f38ca05a1b183012ebdbc9973607a907?s=44&d=identicon&r=G" />
+  <title>FortunkaLightupgrade</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>
