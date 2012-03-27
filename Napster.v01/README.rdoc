@@ -1,0 +1,50 @@
+== Witam w projekcie Napster
+
+Program będzie polegał na bazie danych z listą piosenek. 
+Użytkownik będzie mogł dodać piosenkę oraz zobaczyć jej Wykonawce Album itd.
+Narazie wersja wtępna.
+Pobierać i przerabiać informować o postępach.
+Pozdro
+
+
+== Układ Folderów w Napsterze
+
+The default directory structure of a generated Ruby on Rails application:
+
+  |-- app
+  |   |-- assets
+  |       |-- images
+  |       |-- javascripts
+  |       `-- stylesheets
+  |   |-- controllers
+  |   |-- helpers
+  |   |-- mailers
+  |   |-- models
+  |   `-- views
+  |       `-- layouts
+  |-- config
+  |   |-- environments
+  |   |-- initializers
+  |   `-- locales
+  |-- db
+  |-- doc
+  |-- lib
+  |   `-- tasks
+  |-- log
+  |-- public
+  |-- script
+  |-- test
+  |   |-- fixtures
+  |   |-- functional
+  |   |-- integration
+  |   |-- performance
+  |   `-- unit
+  |-- tmp
+  |   |-- cache
+  |   |-- pids
+  |   |-- sessions
+  |   `-- sockets
+  `-- vendor
+      |-- assets
+          `-- stylesheets
+      `-- plugins

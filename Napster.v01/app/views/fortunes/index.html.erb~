@@ -1,0 +1,28 @@
+<h1>Lista Piosenek Napster'a<br><img src="logo.png" alt="logo" width="40px" height="40px"></h1>
+
+
+
+<table bgcolor="#8b9dc3">
+  <tr>
+    <th>Tytuł Piosenki</th>
+    <th>Artysta</th>
+    <th>Album</th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @fortunes.each do |fortune| %>
+  <tr>
+    <td><%= fortune.title %></td>
+    <td><%= fortune.artist %></td>
+    <td><%= fortune.album %></td>
+    <td><%= link_to 'Pokaż', fortune %></td>
+    <td><%= link_to 'Edytuj', edit_fortune_path(fortune) %></td>
+    <td><%= link_to 'Usuń', fortune, confirm: 'Napewno chcesz usunąć piosenke?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Nowa Piosenka', new_fortune_path %>

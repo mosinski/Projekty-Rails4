@@ -1,0 +1,10 @@
+class CreateFortunes < ActiveRecord::Migration
+  def change
+    create_table :fortunes do |t|
+      t.text :
+      t.string :source
+
+      t.timestamps
+    end
+  end
+end

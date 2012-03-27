@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Tytuł:</b>
+  <%= @fortune.title %>
+</p>
+<p>
+  <b>Artysta:</b>
+  <%= @fortune.artist %>
+</p>
+<p>
+  <b>Album:</b>
+  <%= @fortune.album %>
+</p
+
+<%= link_to 'Edytuj', edit_fortune_path(@fortune) %> |
+<%= link_to 'Wstecz', fortunes_path %>
