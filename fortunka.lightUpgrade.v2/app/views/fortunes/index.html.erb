@@ -1,0 +1,32 @@
+<h1 align="center">Lista Ciekawych Cytatów</h1>
+<style>
+#zrodlo    {font-style:italic;color:#FF0000; font-size:13;vertical-align:bottom;}
+#cytat     {text-align:right;color:#FFF0F0}
+#id        {vertical-align:top;color:green;}
+#gora      {color:gray;}
+</style>
+<table align="center">
+  <tr id='gora'>
+    <th>ID</th>
+    <th>Cytat</th>
+    <th>Źródło</th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @fortunes.each do |fortune| %>
+  <tr>
+    <td id='id'><%= fortune.id %></td>
+    <td id='cytat'><%= fortune.quotation %></td>
+    <td id='zrodlo'><%= '~'+fortune.source %></td>
+    <td><%= link_to image_tag("pokaz.png"), fortune %></td>
+    <td><%= link_to image_tag("edit.jpeg"), edit_fortune_path(fortune) %></td>
+    <td><%= link_to image_tag("delete.png"), fortune, confirm: 'Are you sure?', method: :delete, remote: true, data: { type: :json } %></td>
+    <td><%= link_to image_tag("like.png"),fortune %></td>
+  </tr>
+<% end %>
+</table>
+<br />
+<%= link_to image_tag("dodaj.png"), new_fortune_path%>

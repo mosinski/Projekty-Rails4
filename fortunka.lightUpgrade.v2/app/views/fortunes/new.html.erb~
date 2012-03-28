@@ -1,0 +1,5 @@
+<h1>Nowa Piosenka</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Rezygnuję', fortunes_path %>

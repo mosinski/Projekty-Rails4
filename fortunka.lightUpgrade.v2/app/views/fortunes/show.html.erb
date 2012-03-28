@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+<h1>Widok szczegółowy Cytatu</h1>
+
+<p>
+  <b>Cytat:</b>
+  <%= @fortune.quotation %>
+</p>
+
+<p>
+  <b>Źródło:</b>
+  <%= @fortune.source %>
+</p>
+
+
+<%= link_to 'Edytuj', edit_fortune_path(@fortune) %> |
+<%= link_to 'Wstecz', fortunes_path %>
