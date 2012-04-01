@@ -1,6 +1,6 @@
 <h1 align="center">Lista Ciekawych Cytatów</h1>
 <style>
-#zrodlo    {font-style:italic;color:#FF0000; font-size:13;vertical-align:bottom;}
+#zrodlo    {font-style:italic;color:#D2691E; font-size:13;vertical-align:bottom;}
 #cytat     {text-align:right;color:#FFF0F0}
 #id        {vertical-align:top;color:green;}
 #gora      {color:gray;}
@@ -19,7 +19,7 @@
 <% @fortunes.each do |fortune| %>
   <tr>
     <td id='id'><%= fortune.id %></td>
-    <td id='cytat'><%= fortune.quotation %></td>
+    <td id='cytat'><%= '„'+fortune.quotation+'”' %></td>
     <td id='zrodlo'><%= '~'+fortune.source %></td>
     <td><%= link_to image_tag("pokaz.png"), fortune %></td>
     <td><%= link_to image_tag("edit.jpeg"), edit_fortune_path(fortune) %></td>
