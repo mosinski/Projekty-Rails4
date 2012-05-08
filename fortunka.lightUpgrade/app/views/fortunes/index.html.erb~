@@ -20,6 +20,5 @@
 <% end %>
 </table>
 <br />
-<%= link_to image_tag("dodaj.png", :border=>0), 'Dodaj Cytat', new_fortune_path %>
-
+<%= link_to image_tag("dodaj.png", :border=>0), :id => new_fortune_path %>
 
