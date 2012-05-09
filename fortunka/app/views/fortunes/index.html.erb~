@@ -1,25 +1,24 @@
-<h1>Listing fortunes</h1>
-
-<table class="table">
-  <tr>
-    <th>Cytat</th>
-    <th>Zrodlo</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<style>
+#cytat  {border-left:0;border-bottom:0;border-right:0;border-top:0;font-family: 'Londrina Shadow', cursive;font-size:35px;color:white;text-align:right;}
+#zrodlo {border-left:0;border-bottom:0;border-right:0;border-top:0;font-family: 'Londrina Shadow', cursive;font-size:25px;color:white;vertical-align:bottom;width=1000}
+#przycisk {border-left:0;border-top:0;font-size:35px;color:white;}
+</style>
+<table class="table" id="cytat">
+  <thead>
+    <th id="cytat"></th>
+    <th id="cytat"></th>
+    <th id="cytat"></th>
+  </thead>
 
 <% @fortunes.each do |fortune| %>
-  <tr>
-    <td><%= fortune.cytat %></td>
-    <td><%= fortune.zrodlo %></td>
-    <td><%= link_to 'Show', fortune %></td>
-    <td><%= link_to 'Edit', edit_fortune_path(fortune) %></td>
-    <td><%= link_to 'Destroy', fortune, confirm: 'Are you sure?', method: :delete %></td>
+  <tr id="cytat">
+    <td id="cytat"><%= fortune.cytat %></td>
+    <td id="zrodlo"><%= "~"+fortune.zrodlo %></td>
+    <td id="przycisk"><%= link_to 'Pokaż', fortune,:class => 'btn' %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Fortune', new_fortune_path %>
+<%= link_to 'Dodaj Cytat', new_fortune_path, :class => 'btn' %>
