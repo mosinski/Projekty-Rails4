@@ -15,6 +15,6 @@ en:
       single_page_html:
         zero:  "Brak Cytatow do wyświetlenia"
         one:   "Wyświetlany <b>1</b> Cytat"
-        other: "Wyświetlane <b>Wszystkie&nbsp;%{count}</b> Cytaty"
-      multi_page: "Wyświetlane Cytaty %{from} - %{to} z %{count}"
-      multi_page_html: "Wyświetlane Cytaty <b>%{from} – %{to}</b> z <b>%{count}</b>"
+        other: "Displaying <b>all&nbsp;%{count}</b> %{model}"
+      multi_page: "Displaying %{model} %{from} - %{to} of %{count} in total"
+      multi_page_html: "Displaying %{model} <b>%{from} – %{to}</b> of <b>%{count}</b> in total"
